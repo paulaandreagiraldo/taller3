@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Contador from './components/Contador';
+import CicloVida from './components/CicloVida';
+import ComponenteCombinado from './components/ComponenteCombinado';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    return (
+        <div className="container mx-auto p-4">
+            <h1 className="text-2xl mb-4">Ejercicios de React</h1>
+
+            <h2 className="text-xl mb-2">Ejercicio 1: Contador Simple</h2>
+            <Contador />
+
+            <h2 className="text-xl mt-4 mb-2">Ejercicio 2: Ciclo de Vida</h2>
+            <CicloVida />
+
+            <h2 className="text-xl mt-4 mb-2">Componente Combinado</h2>
+            <ComponenteCombinado />
+        </div>
+    );
+};
 
 export default App;
